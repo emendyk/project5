@@ -1,0 +1,12 @@
+Wearing shirt made of Cotton
+Wearing shorts made of Denim
+Wearing shirt made of Polyester
+Wearing shirt made of Silk
+Wearing shorts made of Cotton
+Wearing shorts made of Linen
+Wearing pants made of Jeans
+Wearing jacket made of Leather
+Wearing pants made of Leggings
+Wearing jacket made of Denim
+Wearing pants made of Cargo
+Wearing jacket made of Wool

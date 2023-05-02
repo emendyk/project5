@@ -29,7 +29,7 @@ public abstract class Clothes implements Comparable<Clothes> {
     }
     
     // An abstract method that will be implemented by each subclass
-    public abstract void wear();
+    public abstract String wear();
     
     // A method inherited by each subclass
     public int compareTo(Clothes other) {
@@ -59,8 +59,8 @@ class Shirt extends Clothes implements Wearable {
         return material;
     }
     
-    public void wear() {
-        System.out.println("Wearing shirt made of " + getMaterial());
+    public String wear() {
+        return "Wearing shirt made of " + getMaterial();
     }
 }
 
@@ -76,8 +76,8 @@ class Jacket extends Clothes implements Wearable {
         return material;
     }
     
-    public void wear() {
-        System.out.println("Wearing jacket made of " + getMaterial());
+    public String wear() {
+        return "Wearing jacket made of " + getMaterial();
     }
 }
 
@@ -93,8 +93,8 @@ class Shorts extends Clothes implements Wearable {
         return material;
     }
     
-    public void wear() {
-        System.out.println("Wearing shorts made of " + getMaterial());
+    public String wear() {
+        return "Wearing shorts made of " + getMaterial();
     }
 }
 
@@ -110,7 +110,7 @@ class Pants extends Clothes implements Wearable {
         return material;
     }
     
-    public void wear() {
-        System.out.println("Wearing pants made of " + getMaterial());
+    public String wear() {
+        return "Wearing pants made of " + getMaterial();
     }
 }

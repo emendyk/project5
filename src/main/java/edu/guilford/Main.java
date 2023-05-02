@@ -1,5 +1,7 @@
 package edu.guilford;
 
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -64,9 +66,29 @@ public class Main extends Application {
         
         primaryStage.setScene(scene);
         primaryStage.show();
+        for (Clothes c : clothes) {
+            String output = c.wear();
+            System.out.println(output);
+            saveOutputToFile(output);
+        }
+
+        System.out.println("Outputs saved to output.txt");
     }
+
+    private static void saveOutputToFile(String output) {
+        try {
+            FileWriter writer = new FileWriter("output.txt", true);
+            writer.write(output + "\n");
+            writer.close();
+        } catch (IOException e) {
+            System.out.println("Error writing to file.");
+            e.printStackTrace();
+        }
+    }
+    
     
     public static void main(String[] args) {
         launch(args);
     }
 }
+
